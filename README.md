@@ -17,3 +17,9 @@ git add .
 git commit -m "รวมคำสั่ง"
 
 git push
+
+git add .
+
+git commit -m "เพิ่มไฟล์ screenshot.pdf"
+
+git push
