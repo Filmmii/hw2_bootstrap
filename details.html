@@ -1,94 +1,256 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>แนะนำสถานที่ท่องเที่ยว - สถานที่ท่องเที่ยว</title>
-        <link rel="stylesheet" href="css/styles.css" />
+        <title>แนะนำสถานที่ท่องเที่ยว-หน้าหลัก</title>
+        <!-- Bootstrap 5 CDN -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     </head>
     <body>
-        <header role="banner">
-            <h1>สถานที่ท่องเที่ยวในสมุทรปราการ</h1>
+        <body class="min-vh-100 d-flex flex-column"
+            style="font-family: 'Prompt', sans-serif;">
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg sticky-top shadow-sm"
+                style="background: linear-gradient(135deg, #132faf, #606e7d);">
+                <div class="container">
+                    <div class="d-flex align-items-center">
+                        <img src="images/logo-1.png" width="80"
+                            height="80" alt="Logo" class="img-fluid">
+                        <span
+                            class="navbar-brand ms-3 fw-bolder fs-4 text-white mb-0">Samut
+                            Prakan</span>
+                    </div>
 
-            <!-- เพิ่ม Hamburger Menu (☰) สำหรับเมนูบนมือถือ -->
-            <div class="hamburger-menu" id="hamburger-menu">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
+                    <button class="navbar-toggler bg-light ms-auto"
+                        type="button"
+                        data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-            <!-- เมนูหลัก -->
-            <nav role="navigation" id="main-nav" class="main-nav">
-                <ul>
-                    <li><a href="index.html">หน้าหลัก</a></li>
-                    <li><a href="details.html">สถานที่ท่องเที่ยว</a></li>
-                    <li><a href="contact.html">ติดต่อเรา</a></li>
-                </ul>
+                    <div class="collapse navbar-collapse text-center"
+                        id="navbarNav">
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                            <li class="nav-item my-2 my-lg-0 mx-2">
+                                <a class="btn btn-outline-light px-4 w-100"
+                                    href="index.html">หน้าแรก</a>
+                            </li>
+                            <li class="nav-item my-2 my-lg-0 mx-2">
+                                <a class="btn btn-outline-light px-4 w-100"
+                                    href="details.html">เกี่ยวกับเรา</a>
+                            </li>
+                            <li class="nav-item my-2 my-lg-0 mx-2">
+                                <a class="btn btn-outline-light px-4 w-100"
+                                    href="contact.html">ติดต่อ</a>
+                            </li>
+                        </ul>
+
+                        <form class="d-flex justify-content-center">
+                            <div class="input-group" style="max-width: 500px;">
+                                <input class="form-control" type="search"
+                                    placeholder="ค้นหา...">
+                                <button class="btn btn-outline-light"
+                                    type="submit">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </nav>
 
-            <!-- เมนูย่อยที่จะปรากฏเมื่อคลิกที่ Hamburger Menu -->
-            <nav id="sub-nav" class="sub-nav">
-                <ul>
-                    <li><a href="index.html">หน้าหลัก</a></li>
-                    <li><a href="details.html">สถานที่ท่องเที่ยว</a></li>
-                    <li><a href="contact.html">ติดต่อเรา</a></li>
-                </ul>
-            </nav>
-
-        </header>
-
-        <main>
-           <!-- ส่วนแนะนำสถานที่ท่องเที่ยว -->
-        <section class="highlights">
-            <div class="highlight-item2">
-                <h3>1.ฟาร์มจระเข้สมุทรปราการ</h3>
-                <img src="image/ฟาร์มจรเข้.jpg"
-                    alt="ฟาร์มจระเข้สมุทรปราการ">
-                <p>ฟาร์มจระเข้สมุทรปราการ
-                    ฟาร์มจระเข้สมุทรปราการ เป็นหนึ่งในสถานที่ท่องเที่ยวที่น่าสนใจและเก่าแก่ที่สุดแห่งหนึ่งในประเทศไทย ตั้งอยู่ที่ตำบลท้ายบ้าน อำเภอเมือง จังหวัดสมุทรปราการ เปิดให้บริการมานานกว่า 70 ปี และยังคงเป็นที่นิยมของนักท่องเที่ยวทั้งชาวไทยและชาวต่างชา</p>
-
-                <h3>2.เมืองโบราณ</h3>
-                <img src="image/เมืองโบราณ.jpg"
-                    alt="เมืองโบราณ">
-                <p>เมืองโบราณ คือสวนสนุกประวัติศาสตร์ขนาดใหญ่ริมแม่น้ำเจ้าพระยา จังหวัดสมุทรปราการ ที่รวบรวมสถาปัตยกรรมไทยอันงดงามจากทั่วทุกภาคของประเทศมาไว้ในที่เดียว ทำให้คุณได้ย้อนเวลาไปสัมผัสกับวิถีชีวิตและวัฒนธรรมไทยในอดีตได้อย่างใกล้ชิด</p>
-
-                <h3>3.สถานตากอากาศบางปู</h3>
-                <img src="image/สถานตากอากาศบางปู.jpg"
-                    alt="สถานตากอากาศบางปู">
-                <p>สถานตากอากาศบางปู เป็นหนึ่งในสถานที่ท่องเที่ยวใกล้กรุงเทพมหานครที่ได้รับความนิยมอย่างสูง ด้วยบรรยากาศริมทะเลที่เงียบสงบและเป็นที่รู้จักกันดีในฐานะแหล่งดูนกนางนวลอพยพในช่วงฤดูหนาว ทำให้ที่นี่เป็นจุดหมายปลายทางยอดนิยมสำหรับผู้ที่ต้องการพักผ่อนหย่อนใจและสัมผัสธรรมชาติ</p>
-
-                <h3>4.พิพิธภัณฑ์ช้างเอราวัณ</h3>
-                <img src="image/ช้างเอราวัณ.jpg"
-                    alt="พิพิธภัณฑ์ช้างเอราวัณ">
-                <p>พิพิธภัณฑ์ช้างเอราวัณ เป็นหนึ่งในแลนด์มาร์คที่โดดเด่นและเป็นที่รู้จักกันดีของประเทศไทย ด้วยรูปลักษณ์อันเป็นเอกลักษณ์ของประติมากรรมช้างสามเศียรขนาดใหญ่ ตั้งอยู่บนถนนสุขุมวิท จังหวัดสมุทรปราการ พิพิธภัณฑ์แห่งนี้ไม่เพียงแต่เป็นสถานที่ท่องเที่ยวที่น่าสนใจ แต่ยังเป็นแหล่งรวมศิลปะ วัฒนธรรม และประวัติศาสตร์อันยาวนานของไทยอีกด้วย</p>
-
-                <h3>5.หอชมเมืองสมุทรปราการ</h3>
-                <img src="image/หอชมเมือง.jpg"
-                    alt="หอชมเมืองสมุทรปราการ">
-                <p>หอชมเมืองสมุทรปราการ หรือ อุทยานการเรียนรู้อ่าวไทย เป็นแลนด์มาร์คแห่งใหม่ของจังหวัดสมุทรปราการ ที่มาพร้อมกับหอคอยชมวิวสูงตระหง่าน ให้คุณได้สัมผัสกับวิวเมืองสมุทรปราการแบบพาโนรามา 360 องศา เหมือนได้มองลงไปยังเมืองที่อยู่เบื้องล่างอย่างใกล้ชิด</p>
+        <!-- Content Section -->
+        <section class="py-5">
+            <div class="container">
+                <h2
+                    class="text-center fw-bold mb-4">สถานที่ท่องเที่ยวแนะนำในจังหวัดสมุทรปราการ</h2>
+                <div class="row g-4">
+                    <!-- Card 1 -->
+                    <div class="col-lg-15 col-md-4 col-sm-6">
+                        <div class="card h-10 shadow border-warning">
+                            <img src="images/ฟาร์มจรเข้.jpg"
+                                class="card-img-top" alt="ฟาร์มจระเข้">
+                            <div class="card-body">
+                                <h5
+                                    class="card-title fw-bold">1.ฟาร์มจระเข้สมุทรปราการ</h5>
+                                <p class="card-text">ฟาร์มจระเข้สมุทรปราการ
+                                    ฟาร์มจระเข้สมุทรปราการ
+                                    เป็นหนึ่งในสถานที่ท่องเที่ยวที่น่าสนใจและเก่าแก่ที่สุดแห่งหนึ่งในประเทศไทย
+                                    ตั้งอยู่ที่ตำบลท้ายบ้าน อำเภอเมือง
+                                    จังหวัดสมุทรปราการ เปิดให้บริการมานานกว่า 70
+                                    ปี
+                                    และยังคงเป็นที่นิยมของนักท่องเที่ยวทั้งชาวไทยและชาวต่างชาติ</p>
+                                <strong>แผนที่</strong>
+                                <a
+                                    href="https://maps.app.goo.gl/2czPRaF5gxoTo2ho9">https://maps.app.goo.gl/2czPRaF5gxoTo2ho9</a>
+                                <p><strong>ช่องทางการติดต่อ: </strong>โทร.
+                                    062-5174464</p>
+                                <p><strong>เวลาเปิด-ปิด: </strong>
+                                    เปิดทุกวัน
+                                    08:00 น.–18:00 น.</p>
+                                <p><strong>ค่าเข้า:
+                                    </strong>บัตรเข้าชมผู้ใหญ่ราคา
+                                    80 บาท และบัตรเข้าชมเด็กราคา 40 บาท</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="col-lg-15 col-md-4 col-sm-6">
+                        <div class="card h-10 shadow border-warning">
+                            <img src="images/เมืองโบราณ.jpg"
+                                class="card-img-top" alt="เมืองโบราณ">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">2.เมืองโบราณ</h5>
+                                <p class="card-text">เมืองโบราณ
+                                    คือสวนสนุกประวัติศาสตร์ขนาดใหญ่ริมแม่น้ำเจ้าพระยา
+                                    จังหวัดสมุทรปราการ
+                                    ที่รวบรวมสถาปัตยกรรมไทยอันงดงามจากทั่วทุกภาคของประเทศมาไว้ในที่เดียว
+                                    ทำให้คุณได้ย้อนเวลาไปสัมผัสกับวิถีชีวิตและวัฒนธรรมไทยในอดีตได้อย่างใกล้ชิด</p>
+                                <strong>แผนที่</strong>
+                                <a
+                                    href="https://maps.app.goo.gl/x9NBMXLYp6vYGpgU7">https://maps.app.goo.gl/x9NBMXLYp6vYGpgU7</a>
+                                <p><strong>ช่องทางการติดต่อ: </strong>โทร.
+                                    02-0268800</p>
+                                <p><strong>เวลาเปิด-ปิด: </strong>เปิดทุกวัน
+                                    09:00 น.–19:00 น.</p>
+                                <p><strong>ค่าเข้า:
+                                    </strong>บัตรเข้าชมผู้ใหญ่ราคา 400 บาท
+                                    บัตรเข้าชมเด็กราคา 200 บาท
+                                    ขับรถส่วนตัวเข้าราคา 400 (รถกอล์ฟ 1 ชั่วโมง
+                                    ราคา 350 บาท)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="col-lg-15 col-md-4 col-sm-6">
+                        <div class="card h-10 shadow border-warning">
+                            <img src="images/สถานตากอากาศบางปู.jpg"
+                                class="card-img-top" alt="สถานตากอากาศบางปู">
+                            <div class="card-body">
+                                <h5
+                                    class="card-title fw-bold">3.สถานตากอากาศบางปู</h5>
+                                <p class="card-text">สถานตากอากาศบางปู
+                                    เป็นหนึ่งในสถานที่ท่องเที่ยวใกล้กรุงเทพมหานครที่ได้รับความนิยมอย่างสูง
+                                    ด้วยบรรยากาศริมทะเลที่เงียบสงบและเป็นที่รู้จักกันดีในฐานะแหล่งดูนกนางนวลอพยพในช่วงฤดูหนาว
+                                    ทำให้ที่นี่เป็นจุดหมายปลายทางยอดนิยมสำหรับผู้ที่ต้องการพักผ่อนหย่อนใจและสัมผัสธรรมชาติ</p>
+                                <strong>แผนที่</strong>
+                                <a
+                                    href="https://maps.app.goo.gl/mSpqhEeS1X6SpfLc7">https://maps.app.goo.gl/mSpqhEeS1X6SpfLc7</a>
+                                <p><strong>ช่องทางการติดต่อ: </strong>โทร.
+                                    02-3239911</p>
+                                <p><strong>เวลาเปิด-ปิด: </strong>เปิดทุกวัน
+                                    10:00 น.–20:00 น.</p>
+                                <p><strong>ค่าเข้า: </strong>ฟรี</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="col-lg-15 col-md-4 col-sm-6">
+                        <div class="card h-10 shadow border-warning">
+                            <img src="images/ช้างเอราวัณ.jpg"
+                                class="card-img-top" alt="ช้างเอราวัณ">
+                            <div class="card-body">
+                                <h5
+                                    class="card-title fw-bold">4.พิพิธภัณฑ์ช้างเอราวัณ</h5>
+                                <p class="card-text">พิพิธภัณฑ์ช้างเอราวัณ
+                                    เป็นหนึ่งในแลนด์มาร์คที่โดดเด่นและเป็นที่รู้จักกันดีของประเทศไทย
+                                    ด้วยรูปลักษณ์อันเป็นเอกลักษณ์ของประติมากรรมช้างสามเศียรขนาดใหญ่
+                                    ตั้งอยู่บนถนนสุขุมวิท จังหวัดสมุทรปราการ
+                                    พิพิธภัณฑ์แห่งนี้ไม่เพียงแต่เป็นสถานที่ท่องเที่ยวที่น่าสนใจ
+                                    แต่ยังเป็นแหล่งรวมศิลปะ วัฒนธรรม
+                                    และประวัติศาสตร์อันยาวนานของไทยอีกด้วย</p>
+                                <strong>แผนที่</strong>
+                                <a
+                                    href="https://maps.app.goo.gl/5UhfkuxKvMAcBskQ7">https://maps.app.goo.gl/5UhfkuxKvMAcBskQ7</a>
+                                <p><strong>ช่องทางการติดต่อ: </strong>โทร.
+                                    088-6959307</p>
+                                <p><strong>เวลาเปิด-ปิด: </strong>เปิดทุกวัน
+                                    09:00 น.–18:00 น.</p>
+                                <p><strong>ค่าเข้า:
+                                    </strong>1.เที่ยวชมตั้งแต่เวลา
+                                    09.00 น. - 17.00 น.
+                                    บุคคลทั่วไป : ผู้ใหญ่ 200 บาท / เด็ก 100 บาท
+                                    ชาวต่างชาติ : ผู้ใหญ่ 400 บาท / เด็ก 200 บาท
+                                    2.เที่ยวชมตั้งแต่เวลา 17.00 น. - 19.00 น.
+                                    บุคคลทั่วไป : ผู้ใหญ่ 100 บาท / เด็ก 50 บาท
+                                    ชาวต่างชาติ : ผู้ใหญ่ 200 บาท / เด็ก 100 บาท
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="col-lg-15 col-md-4 col-sm-6">
+                        <div class="card h-10 shadow border-warning">
+                            <img src="images/หอชมเมือง.jpg"
+                                class="card-img-top" alt="หอชมเมือง">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">5.หอชมวิวสมุทรปราการ</h5>
+                                <p class="card-text">เมืองโบราณ
+                                    คือสวนสนุกประวัติศาสตร์ขนาดใหญ่ริมแม่น้ำเจ้าพระยา
+                                    จังหวัดสมุทรปราการ
+                                    ที่รวบรวมสถาปัตยกรรมไทยอันงดงามจากทั่วทุกภาคของประเทศมาไว้ในที่เดียว
+                                    ทำให้คุณได้ย้อนเวลาไปสัมผัสกับวิถีชีวิตและวัฒนธรรมไทยในอดีตได้อย่างใกล้ชิด</p>
+                                <strong>แผนที่</strong>
+                                <a
+                                    href="https://maps.app.goo.gl/isdYAF4U8uqkYosy7">https://maps.app.goo.gl/isdYAF4U8uqkYosy7</a>
+                                <p><strong>ช่องทางการติดต่อ: </strong>โทร.
+                                    098-2419495</p>
+                                <p><strong>เวลาเปิด-ปิด: </strong>เปิดทุกวัน
+                                    10:00 น.–17:00 น.</p>
+                                <p><strong>ค่าเข้า: </strong>ฟรี</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            </section>
+        </section>
 
-
-        </main>
-
-        <!-- ส่วนท้ายของเว็บไซต์ -->
-        <footer>
-            <p>&copy; 2024 จังหวัดสมุทรปราการ</p>
+        <!-- Footer -->
+        <footer class="py-4 text-white"
+            style="background: linear-gradient(135deg, #132faf, #606e7d);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <h5>Contact Info</h5>
+                        <p class="mb-1">262 BUU, Burapha</p>
+                        <p class="mb-0">Email: 66160266@go.buu.ac.th</p>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <h5>Quick Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#"
+                                    class="text-white text-decoration-none">Privacy
+                                    Policy</a></li>
+                            <li><a href="#"
+                                    class="text-white text-decoration-none">Terms
+                                    of Service</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 text-md-end">
+                        <h5>Follow Us</h5>
+                        <a href="#" class="text-white me-3"><i
+                                class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i
+                                class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-white"><i
+                                class="fab fa-instagram fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="text-center mt-3">
+                    &copy; 2024 จังหวัดสมุทรปราการ สงวนลิขสิทธิ์.
+                </div>
+            </div>
         </footer>
-    
 
-        <!-- ส่วนสคริปต์ควบคุมเมนูแฮมเบอร์เกอร์ -->
-        <script>
-            // สร้างตัวแปรเพื่อเข้าถึง Hamburger Menu และ Sub Nav
-            const hamburgerMenu = document.getElementById('hamburger-menu');
-            const subNav = document.getElementById('sub-nav');
-      
-            // เมื่อคลิกที่ Hamburger Menu ให้แสดง/ซ่อนเมนูย่อย
-            hamburgerMenu.addEventListener('click', () => {
-                subNav.classList.toggle('open');  // สลับการแสดงเมนูย่อย
-            });
-        </script>
-    
+        <!-- Bootstrap JS -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
